@@ -1,0 +1,202 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\begin{document}
+
+\begin{center}
+    {\Huge \scshape Shevinu Nawalage} \\ \vspace{1pt}
+    40 Graves Street, St. John's, NL, CA \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ 709-219-3095 ~ \href{mailto:shevinu2002@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  {\textcolor{blue}{shevinu2002@gmail.com}}} ~ 
+    \href{https://www.linkedin.com/in/shevinu-nawalage-a109371bb/}{\raisebox{-0.2\height}\faLinkedin\ {\textcolor{blue}{Shevinu Nawalage}}}  ~
+    \href{https://github.com/ShevinuM}{\raisebox{-0.2\height}\faGithub\ {\textcolor{blue}{https://github.com/ShevinuM}}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Memorial University of Newfoundland}{Sep. 2021 -- April 2025}
+      {Bachelor of Science in Computer Science}{St. John's, NL}
+      
+      {GPA: 3.91 / 4.0}
+  \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+\section{Relevant Coursework}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{1}
+            \begin{itemize}[itemsep=-5pt, parsep=3pt]
+                \item\small Data Structures and Algorithms
+                \item Discrete Mathematics for Computer Science
+                \item Software Engineering 
+                \item OOP and Human-Computer Interaction
+                \item Foundations of Computer Systems
+                \item Computer Architecture and Design
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Personal Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\href{https://github.com/ShevinuM/SafePass}{\textcolor{blue}{\textbf{SafePass}}} $|$ \emph{Java, SQL, JUnit}}{May 2023 - Present}
+          \resumeItemListStart
+            \resumeItem{A full-stack application which prioritizes local storage to store password locally for enhanced security.}
+            \resumeItem{Utilizes hashing algorithms such as PBKDF2 with HmacSHA256 to hash and salt passwords for password storage.}
+            \resumeItem{Built with the possibility to use plug-in interfaces for more modularity by utilizing the MVC design pattern and adherence to Object Oriented Programming Concepts such as Encapsulation, Inheritance, Polymorphism and Abstraction.}
+            \resumeItem{Ongoing: Leveraging Spring Boot to streamline development and enhance functionality such as configuration. Implementing a SQL database for efficient data storage and retrieval. Developing the front-end application using JavaFX for a user-friendly interface.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\href{https://github.com/ShevinuM/Sheldon}{\textcolor{blue}{\textbf{Sheldon}}} $|$ \emph{Python, Flask, HTML, CSS, JavaScript}}{May 2023 - June 2023}
+          \resumeItemListStart
+            \resumeItem{Utilized the Chatterbot library with a custom made corpus dataset to implement a full-stack ChatBot web application to assist individuals with queries related to portfolio building.}
+            \resumeItem{Utilizes the OpenAI API to handle prompts which yield a low probability response.}
+            \resumeItem{Ongoing: Developing an inbuilt resume generator that dynamically creates resumes based on user prompts.}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          \resumeProjectHeading
+          {\href{https://github.com/ShevinuM/Data-Structures-And-Algorithms}{\textcolor{blue}{\textbf{Data Structures and Algorithms}}} $|$ \emph{Java, Python}}{April 2023 - Present}
+          \resumeItemListStart
+            \resumeItem{A repository containing my solutions to various DSA problems.}
+            \resumeItem{Implemented solutions to various logical problems covering various Data Structures and Algorithms such as Backtracking, Dynamic Programming, Sorting Algorithms to name a few.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+\section{School Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Can't Stop} $|$ \emph{Java, Swing}}{January 2023 - April - 2023}
+          \resumeItemListStart
+            \resumeItem{Developed a Full-stack application with 4 team members which implements the Can't Stop Board Game.}
+            \resumeItem{2 Team members were primarily responsible for coding the game with me specializing in the back-end logic of the game.}
+            \resumeItem{Implemented a comprehensive algorithm to determine the relative positioning of the pieces on the board according to the dice rolls. Algorithm also determines the winner based of the dice positioning represented in multiple data structures}
+            \resumeItem{Implemented load/save functionality through serialization utilizing Data Storage classes to save the current state of the board allowing for the future possibility of networking as well.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Memorial University of Newfoundland}{Oct 2022 -- April 2023}
+      {Design and Development Assistant}{St. John's, NL}
+      \resumeItemListStart
+        \resumeItem{Designed and developed engaging educational posters and webpages using HTML, CSS.}
+        \resumeItem{Developed modules for individuals not proficient in technology to lay the foundation to understanding the basic day-to-day operations of Windows, Mac, and Chrome operating systems.}
+        \resumeItem{Conducted comprehensive usability analysis of the Brightspace website, proposed enhancements to improve efficiency and user-friendliness.}
+      \resumeItemListEnd
+
+%
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Java, HTML/CSS, JavaScript, SQL} \\
+     \textbf{Developer Tools}{: PostgreSQL, Git, pip, VS Code, IntelliJ IDEA, } \\
+     \textbf{Technologies/Frameworks}{: Bootstrap, JUnit, Swing} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+
+
+\end{document}
