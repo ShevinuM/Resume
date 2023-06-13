@@ -18,13 +18,25 @@
 \input{glyphtounicode}
 
 
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
 \pagestyle{fancy}
-\fancyhf{}
+\fancyhf{} % clear all header and footer fields
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-
+% Adjust margins
 \addtolength{\oddsidemargin}{-0.6in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1.19in}
@@ -37,13 +49,16 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
+% Sections formatting
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large\bfseries
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-
+% Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
+%-------------------------
+% Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
     {#1 \vspace{-2pt}}
@@ -88,8 +103,17 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
 
 \begin{center}
     {\Huge \scshape Shevinu Nawalage} \\ \vspace{1pt}
@@ -106,11 +130,8 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Memorial University of Newfoundland}{Sep. 2021 -- April 2025}
-      {Bachelor of Science in Computer Science}{St. John's, NL}
-      
-      {GPA: 3.91 / 4.0}
+      {Bachelor of Science in Computer Science (GPA: 3.91 / 4.0)}{St. John's, NL}
   \resumeSubHeadingListEnd
-
 %------RELEVANT COURSEWORK-------
 \section{Relevant Coursework}
     %\resumeSubHeadingListStart
@@ -134,25 +155,25 @@
       \resumeProjectHeading
           {\href{https://github.com/ShevinuM/SafePass}{\textcolor{blue}{\textbf{SafePass}}} $|$ \emph{Java, SQL, JUnit}}{May 2023 - Present}
           \resumeItemListStart
-            \resumeItem{A full-stack application which prioritizes local storage to store passwords locally for enhanced security.}
+            \resumeItem{A desktop application which prioritizes local storage to store passwords locally for enhanced security.}
             \resumeItem{Utilizes hashing algorithms such as PBKDF2 with HmacSHA256 to hash and salt passwords for password storage.}
             \resumeItem{Built with the possibility to use plug-in interfaces for more modularity by utilizing the MVC design pattern and adherence to Object Oriented Programming Concepts such as Encapsulation, Inheritance, Polymorphism and Abstraction.}
-            \resumeItem{Ongoing: Leveraging Spring Boot to streamline development and enhance functionality such as configuration. Implementing a SQL database for efficient data storage and retrieval. Developing the front-end application using JavaFX for a user-friendly interface.}
+            \resumeItem{Ongoing: Utilizing Spring Boot for enhanced functionality and configuration, implementing a SQL database for data management, and creating a user-friendly interface with JavaFX.}
           \resumeItemListEnd
           \vspace{-13pt}
       \resumeProjectHeading
-          {\href{https://github.com/ShevinuM/Sheldon}{\textcolor{blue}{\textbf{Sheldon}}} $|$ \emph{Python, Flask, HTML, CSS, JavaScript}}{May 2023 - June 2023}
+          {\href{https://github.com/ShevinuM/Sheldon}{\textcolor{blue}{\textbf{Sheldon}}} $|$ \emph{Python, Flask, HTML, CSS, JavaScript, AWS Elastic Beanstalk}}{May 2023 - June 2023}
           \resumeItemListStart
-            \resumeItem{Utilized the Chatterbot library with a custom made corpus dataset to implement a full-stack ChatBot web application to assist individuals with queries related to portfolio building.}
-            \resumeItem{Utilizes the OpenAI API to handle prompts which yield a low probability response.}
-            \resumeItem{Ongoing: Developing an inbuilt resume generator that dynamically creates resumes based on user prompts.}
+            \resumeItem{Developed a responsive Full-Stack Chatbot application using OpenAI API, specifically tailored to respond to queries related to portfolio building, thereby streamlining user interaction.}
+            \resumeItem{Implemented a persistent caching mechanism to optimize response times and significantly reduce the number of costly API calls.}
+            \resumeItem{Leveraged AWS Elastic Beanstalk for efficient application deployment and management, ensuring high availability and scalable performance.}
           \resumeItemListEnd 
           \vspace{-13pt}
           \resumeProjectHeading
           {\href{https://github.com/ShevinuM/Data-Structures-And-Algorithms}{\textcolor{blue}{\textbf{Data Structures and Algorithms}}} $|$ \emph{Java, Python}}{April 2023 - Present}
           \resumeItemListStart
-            \resumeItem{A repository containing my solutions to various DSA problems.}
-            \resumeItem{Implemented solutions to various logical problems covering various Data Structures and Algorithms such as Backtracking, Dynamic Programming, Sorting Algorithms to name a few.}
+            \resumeItem{Curated a comprehensive repository featuring solutions to 75+ popular and complex coding problems related to DSA.}
+            \resumeItem{The repository encapsulates a broad range of problem-solving strategies, including Backtracking, Dynamic Programming, and Sorting Algorithms, among others, demonstrating versatility and advanced proficiency in algorithmic thinking.}
           \resumeItemListEnd 
     \resumeSubHeadingListEnd
 \vspace{-15pt}
@@ -163,8 +184,8 @@
       \resumeProjectHeading
           {\textbf{Can't Stop} $|$ \emph{Java, Swing}}{January 2023 - April - 2023}
           \resumeItemListStart
-            \resumeItem{Developed a Full-stack application with 4 team members which implements the Can't Stop Board Game.}
-            \resumeItem{2 Team members were primarily responsible for coding the game with me specializing in the back-end logic of the game.}
+            \resumeItem{Collaborated with a team of four to develop a desktop application that digitally replicates the Can’t Stop Board Game.}
+            \resumeItem{Specialized in back-end development, designed and implemented the game logic using Java, effectively translating the physical game rules into a virtual environment.}
             \resumeItem{Implemented a comprehensive algorithm to determine the relative positioning of the pieces on the board according to the dice rolls. Algorithm also determines the winner based of the dice positioning represented in multiple data structures}
             \resumeItem{Implemented load/save functionality through serialization utilizing Data Storage classes to save the current state of the board allowing for the future possibility of networking as well.}
           \resumeItemListEnd
@@ -176,22 +197,22 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Memorial University of Newfoundland}{Oct 2022 -- April 2023}
+      {Memorial University of Newfoundland - CITL}{Oct 2022 -- April 2023}
       {Design and Development Assistant}{St. John's, NL}
       \resumeItemListStart
-        \resumeItem{Designed and developed engaging educational posters and webpages using HTML, CSS.}
-        \resumeItem{Developed modules for individuals not proficient in technology to lay the foundation to understanding the basic day-to-day operations of Windows, Mac, and Chrome operating systems.}
-        \resumeItem{Conducted comprehensive usability analysis of the Brightspace website, proposed enhancements to improve efficiency and user-friendliness.}
+        \resumeItem{Designed and deployed interactive educational webpages and posters using HTML and CSS.}
+        \resumeItem{Created instructive modules simplifying Windows, Mac, and Chrome OS operations for tech novices, bridging the knowledge gap and empowering users.}
+        \resumeItem{ Performed an extensive usability analysis on the Brightspace website and proposed user-centric enhancements to bolster efficiency and user experience.}
       \resumeItemListEnd
 
 %
-%-----------TECHNICAL SKILLS-----------
+%-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, Java, HTML/CSS, JavaScript, SQL} \\
+     \textbf{Languages}{: Python, Java, HTML, CSS, JavaScript, SQL} \\
      \textbf{Developer Tools}{: PostgreSQL, Git, pip, VS Code, IntelliJ IDEA, } \\
-     \textbf{Technologies/Frameworks}{: Bootstrap, JUnit, Swing} \\
+     \textbf{Technologies/Frameworks}{:JUnit, Swing} \\
     }}
  \end{itemize}
  \vspace{-16pt}
